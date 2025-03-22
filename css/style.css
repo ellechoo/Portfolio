@@ -23,6 +23,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 section:before {
   content: '';
   position: absolute;
@@ -32,6 +33,7 @@ section:before {
   background: linear-gradient(to bottom, #001f4a, transparent);
   z-index: 100;
 }
+
 section:after {
   content: '';
   position: absolute;
@@ -43,6 +45,7 @@ section:after {
   z-index: 100;
   mix-blend-mode: color;
 }
+
 section img {
   position: absolute;
   top: 0;
@@ -52,6 +55,7 @@ section img {
   object-fit: cover;
   pointer-events: none;
 }
+
 #text {
   position: relative;
   z-index: 100000;
@@ -62,17 +66,29 @@ section img {
   font-family: "Meander", sans-serif;
   letter-spacing: 0.07em;
 }
+
 #text2 {
   position: relative;
   z-index: 100000;
   color: #004081;
-  font-size: 6em;
+  font-size: 8.5em;
   text-align: center;
   line-height: 1;
   font-family: "Meander", sans-serif;
   letter-spacing: 0.07em;
 }
 
+@media (max-width: 900px) {
+  #text2 {
+    font-size: 6em; /* Adjust the font size as needed */
+  }
+}
+
+@media (max-width: 600px) {
+  #text2 {
+    font-size: 4em; /* Adjust the font size as needed */
+  }
+}
 
 :root {
   --bs-blue: #0d6efd;

@@ -198,12 +198,7 @@
   		if (value + window.innerHeight > sectionPosition) { // When the section comes into view
     	// Moving the text down with scroll, but stops when it reaches the center
     	let scrollPosition = (value - sectionPosition) * 0.8;
-    	text2.style.top = Math.min(scrollPosition, window.innerHeight / 2.3) + 'px';
-    
-    	// Decreasing font size while scrolling
-    	let newFontSize = maxFontSize - (value * 0.08);
-    	newFontSize = Math.max(newFontSize, minFontSize); // Stop shrinking once it hits the minFontSize
-    	text2.style.fontSize = newFontSize + 'em';
+    	text2.style.top = Math.min(scrollPosition, window.innerHeight / 2.8) + 'px';
   		}
 		});
 	</script>
