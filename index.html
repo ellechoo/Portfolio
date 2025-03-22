@@ -55,20 +55,23 @@
 	
 
 
-	<div class="hero v-h-full overlay">
-		<div class="img-bg rellax">
-			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-full">
+	<section>
+		<img src="bg.jpg" id="bg">
+		<h1 id="text">ELLE CHOO</h1>
+	</section>
 
-				<div class="col-lg-10 col-xxl-6">
-					<h1 class="heading-2 text-white mb-5" data-aos="fade-up">Elle</h1>
-				</div>
+	<script type="text/javascript">
+		let bg = document.getElementById("bg");
+		let text = document.getElementById("text");
+	
+		window.addEventListener('scroll', function(){
+			var value = window.scrollY;
+			bg.style.top = value * 0.5 + 'px';
+			text.style.top = value * 1 + 'px';
+		})
+	</script>
 
-			</div>
-		</div>
-	</div>
+
 
 	<div id="portfolio" class="section">
 	<div class="section">
@@ -172,23 +175,20 @@
 	</div>
 	</div>
 
+	<div class="hero v-h-full overlay">
+		<div class="img-bg rellax">
+			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
+		</div>
+		<div class="container">
+			<div class="row align-items-center v-h-full">
 
-
-	<div id="about">
-		<div class="hero about-hero v-h-full overlay"> <!-- Unique class added -->
-			<div class="img-bg rellax">
-				<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-			</div>
-			<div class="container">
-				<div class="row align-items-center v-h-full">
-					<div class="col-lg-10 col-xxl-6">
-						<h1 class="heading-2 text-white mb-5" data-aos="fade-up">About</h1>
-					</div>
+				<div class="col-lg-10 col-xxl-6">
+					<h1 class="heading-2 text-white mb-5" data-aos="fade-up">Elle</h1>
 				</div>
+
 			</div>
 		</div>
-	</div>	
-
+	</div>
 
 	<div id="about" class="about-section">
 	<div class="section">
@@ -223,7 +223,6 @@
 	</div>
 	</div>
 	</div>
-
 		
 	
 	<div class="site-footer">
@@ -255,6 +254,27 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
+
+
+
+<!-- Add GSAP and ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+	<script>
+		gsap.registerPlugin(ScrollTrigger);
+  
+		gsap.to(".parallax", {
+		scrollTrigger: {
+		trigger: ".parallax",
+		start: "top top",
+		end: "bottom center",
+		scrub: true, // Smooth transition
+		pin: true, // Keeps the section in place until the text scrolls
+	  	}
+		});
+	</script>
+
 
 	<script> 
 	// Get the button
