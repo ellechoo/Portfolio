@@ -38,12 +38,10 @@
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
-				<a href="#" class="logo m-0">Elle Choo</a>
 	
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
 					<li><a href="#portfolio">Work</a></li>
 					<li><a href="#about">About</a></li>
-
 				</ul>
 	
 				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
@@ -57,19 +55,8 @@
 
 	<section>
 		<img src="bg.jpg" id="bg">
-		<h1 id="text">ELLE CHOO</h1>
+		<h1 id="text">ELLE<br>CHOO</h1>
 	</section>
-
-	<script type="text/javascript">
-		let bg = document.getElementById("bg");
-		let text = document.getElementById("text");
-	
-		window.addEventListener('scroll', function(){
-			var value = window.scrollY;
-			bg.style.top = value * 0.5 + 'px';
-			text.style.top = value * 1 + 'px';
-		})
-	</script>
 
 
 
@@ -175,20 +162,53 @@
 	</div>
 	</div>
 
-	<div class="hero v-h-full overlay">
-		<div class="img-bg rellax">
-			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-full">
+	
+	<section id="aboutme">
+		<h1 id="text2">ABOUT ME</h1>
+	</section>
 
-				<div class="col-lg-10 col-xxl-6">
-					<h1 class="heading-2 text-white mb-5" data-aos="fade-up">Elle</h1>
-				</div>
+	<script type="text/javascript">
+		// For "ELLE CHOO" section
+		let bg = document.getElementById("bg");
+		let text = document.getElementById("text");
 
-			</div>
-		</div>
-	</div>
+		window.addEventListener('scroll', function() {
+  		var value = window.scrollY;
+  
+  		// Scroll effect for background
+  		bg.style.top = value * 0.5 + 'px';
+  
+  		// Scroll effect for text (ELLE CHOO)
+  		text.style.top = value * 1.8 + 'px';
+  		text.style.fontSize = 10 + value * 0.2 + 'em';
+		});
+
+		// For "ABOUT ME" section
+		let text2 = document.getElementById("text2");
+		const minFontSize = 10;  // The smallest font size you want
+		const maxFontSize = 100;  // The largest font size (initial size)
+
+		window.addEventListener('scroll', function() {
+  		let value = window.scrollY;
+
+  		// Only activate the scroll effect for "ABOUT ME" when it's in view
+  		let sectionPosition = document.getElementById("aboutme").offsetTop;
+  		let sectionHeight = document.getElementById("aboutme").offsetHeight;
+  
+  		if (value + window.innerHeight > sectionPosition) { // When the section comes into view
+    	// Moving the text down with scroll, but stops when it reaches the center
+    	let scrollPosition = (value - sectionPosition) * 0.8;
+    	text2.style.top = Math.min(scrollPosition, window.innerHeight / 2.3) + 'px';
+    
+    	// Decreasing font size while scrolling
+    	let newFontSize = maxFontSize - (value * 0.08);
+    	newFontSize = Math.max(newFontSize, minFontSize); // Stop shrinking once it hits the minFontSize
+    	text2.style.fontSize = newFontSize + 'em';
+  		}
+		});
+	</script>
+	  
+
 
 	<div id="about" class="about-section">
 	<div class="section">
@@ -254,26 +274,6 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
-
-
-
-<!-- Add GSAP and ScrollTrigger -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-	<script>
-		gsap.registerPlugin(ScrollTrigger);
-  
-		gsap.to(".parallax", {
-		scrollTrigger: {
-		trigger: ".parallax",
-		start: "top top",
-		end: "bottom center",
-		scrub: true, // Smooth transition
-		pin: true, // Keeps the section in place until the text scrolls
-	  	}
-		});
-	</script>
 
 
 	<script> 

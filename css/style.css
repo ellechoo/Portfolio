@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;600;900&display=swap');
+
+@font-face {
+  font-family: "Meander";
+  src: url("fonts/MeanderFreeTrial-GODlA.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -48,9 +56,23 @@ section img {
   position: relative;
   z-index: 100000;
   color: #ffffff;
-  font-size: 10em;
+  font-size: 10.5em;
   text-align: center;
+  line-height: 1;
+  font-family: "Meander", sans-serif;
+  letter-spacing: 0.07em;
 }
+#text2 {
+  position: relative;
+  z-index: 100000;
+  color: #004081;
+  font-size: 6em;
+  text-align: center;
+  line-height: 1;
+  font-family: "Meander", sans-serif;
+  letter-spacing: 0.07em;
+}
+
 
 :root {
   --bs-blue: #0d6efd;
@@ -97,10 +119,8 @@ body {
   color: #212529;
   background-color: #d3e9ff;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
-
-
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
 
 
 /* Parallax section */
@@ -166,7 +186,7 @@ body {
     width: 80%;
     max-width: 70%;
     margin: -50px auto 0;
-    z-index: 2; /* Higher than hero */
+    z-index: 2000; /* Higher than hero */
     min-height: 100vh;
 }
 
@@ -7324,7 +7344,7 @@ progress {
         text-decoration: none !important;
         color: rgba(255, 255, 255, 0.7); }
         .site-nav .site-navigation .site-menu > li > a:hover {
-          color: #fff; }
+          color: #002ca6; }
       .site-nav .site-navigation .site-menu > li.cta-button a {
         padding: 6px 20px;
         border: 2px solid rgba(255, 255, 255, 0.1);
@@ -7332,8 +7352,8 @@ progress {
         border-radius: 30px; }
         .site-nav .site-navigation .site-menu > li.cta-button a:hover {
           color: #000;
-          background: #ff4c4c;
-          border-color: #ff4c4c; }
+          background: #002ca6;
+          border-color: #002ca6; }
       .site-nav .site-navigation .site-menu > li.active > a {
         color: #fff; }
     .site-nav .site-navigation .site-menu .has-children {
