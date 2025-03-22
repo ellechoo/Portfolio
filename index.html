@@ -211,6 +211,15 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="widget">
+					<h3>Contact</h3>
+					<ul class="list-unstyled links">
+						<li><a href="https://www.linkedin.com/in/elle-choo-a069ba279" target="_blank">LinkedIn</a></li>
+						<li><a href="mailto:choom783@newschool.edu">Email</a></li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -222,18 +231,14 @@
 	<div class="site-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3>Contact</h3>
-						<ul class="list-unstyled links">
-							<li><a href="https://www.linkedin.com/in/elle-choo-a069ba279" target="_blank">LinkedIn</a></li>
-							<li><a href="mailto:choom783@newschool.edu">Email</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
+				<div class="col-lg-12 text-center"> <!-- Centering the content -->
+					<!-- Back to Top Button with text as the button -->
+					<a href="#top" id="backToTop" class="back-to-top-link">Back to Top</a>
+				</div> <!-- /.col-lg-12 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
-	</div> <!-- /.site-footer -->
+	</div> <!-- /.site-footer -->	
+	
 
 
 	<!-- Preloader -->
@@ -252,5 +257,17 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script> 
+	// Get the button
+	let backToTopButton = document.getElementById("backToTop");
+
+	// Scroll to top when the button is clicked
+	backToTopButton.onclick = function () {
+    	window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+	};
+
+	</script>
+
 </body>
 </html>
