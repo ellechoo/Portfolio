@@ -41,7 +41,7 @@
 	
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
 					<li><a href="#portfolio">Work</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="#aboutme">About</a></li>
 				</ul>
 	
 				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
@@ -232,7 +232,6 @@
 						<li><a href="mailto:choom783@newschool.edu">Email</a></li>
 					</ul>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -251,6 +250,24 @@
 		</div> <!-- /.container -->
 	</div> <!-- /.site-footer -->	
 	
+
+
+	<script>
+	// JavaScript to handle the scroll event and show/hide the back to top link
+	window.addEventListener('scroll', function() {
+  	let backToTopLink = document.getElementById('backToTop');
+  	let scrollPosition = window.scrollY;
+  	let footerPosition = document.querySelector('.site-footer').offsetTop;
+
+  	// Check if the user has scrolled to the bottom of the page
+  	if (scrollPosition + window.innerHeight >= footerPosition) {
+    backToTopLink.classList.add('visible');
+  	} else {
+	  backToTopLink.classList.remove('visible');
+  	}
+	});
+	</script>
+
 
 
 	<!-- Preloader -->
