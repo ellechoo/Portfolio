@@ -90,10 +90,10 @@ section img {
   }
 }
 
-/* Initial styles for the Back to Top link */
+
 #backToTop {
   position: fixed;
-  bottom: -50px; /* Start off-screen */
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   color: #004081;
@@ -101,16 +101,19 @@ section img {
   border-radius: 5px;
   font-size: 1em;
   text-decoration: none;
-  transition: bottom 0.3s ease-in-out;
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
 }
 
-/* When the link becomes visible */
 #backToTop.visible {
-  bottom: 30px; /* Moves to center of the footer */
-  opacity: 1; /* Make it visible */
-  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#backToTop.fade-out {
+  opacity: 0; /* Fade it out when scrolling up */
 }
 
 #backToTop:hover {
@@ -118,13 +121,36 @@ section img {
 }
 
 .circular-image {
-  width: 100%;
-  max-width: 500px; /* adjust as needed */
+  width: 80%;
+  max-width: 100px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+}
+
+.contact-box {
+  background-color: #f9f9f9; /* light background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+}
+
+.contact-box h3 {
+  margin-bottom: 20px;
+}
+.contact-box a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.contact-box a:hover {
+  color: #007bff;
 }
 
 
