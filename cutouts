@@ -1,0 +1,9 @@
+	<div class ="container">
+		<div class="contact-box mt-5" data-aos="fade-up">
+			<h3>Contact</h3>
+			<ul class="list-unstyled links">
+				<li><a href="https://www.linkedin.com/in/elle-choo-a069ba279" target="_blank">LinkedIn</a></li>
+				<li><a href="mailto:choom783@newschool.edu">Email</a></li>
+			</ul>
+		</div>
+	</div>

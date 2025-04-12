@@ -93,18 +93,18 @@ section img {
 
 #backToTop {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  color: #004081;
+  color: #448bd2;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
-  z-index: 1000;
+  z-index: 0;
 }
 
 #backToTop.visible {
@@ -127,7 +127,7 @@ section img {
   object-fit: cover;
   border-radius: 15px; /* ← makes it a square with rounded corners */
   display: block;
-  margin-left: 60px;
+  margin-left: 100px;
   margin-top: -40px;
 }
 
@@ -349,14 +349,12 @@ body {
 
 
 .back-to-top-link {
-  color: #007bff; /* Blue text color */
-  font-size: 20px;
+  color: #3798ff; /* Blue text color */
+  font-size: 10px;
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Make the text bold */
   cursor: pointer;
-  display: inline-block; /* Make it behave like a block element */
-  padding: 10px 20px; /* Add some padding around the text */
-  border-radius: 5px; /* Optional: Rounded corners */
+  display: inline-block;
   transition: color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
@@ -366,15 +364,12 @@ body {
   transform: scale(1.05); /* Slightly increase the size on hover */
 }
 
-/* Style to center the button text in the footer */
 .site-footer .container {
   text-align: center;
-  margin-top: 20px; /* Space above the text */
 }
 
-/* Ensure that the footer takes up enough space to be noticeable */
 .site-footer {
-  padding: 80px 0; /* Add padding to the footer */
+  padding: 50px 0; /* Add padding to the footer */
   background-color: transparent;
 }
 
