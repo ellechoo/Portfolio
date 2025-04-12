@@ -60,13 +60,13 @@
 
 
 
-	<div id="portfolio" class="section">
+	<div id="portfolio" class="section-bg">
 	<div class="section">
 		<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-					<span class="subheading mb-2 d-inline-block">Awesome Portfolio</span>
-					<h2 class="mb-4">Our Portfolio</h2>
+					<span class="subheading mb-2 d-inline-block">Elle Choo</span>
+					<h2 class="mb-4">My Work</h2>
 				</div>
 			</div>
 
@@ -162,7 +162,48 @@
 	</div>
 	</div>
 
+
+
+	<script>
+		const section = document.querySelector('.section-bg');
+	  
+		function interpolateColor(color1, color2, factor) {
+		  const result = color1.slice();
+		  for (let i = 0; i < 3; i++) {
+			result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+		  }
+		  return result;
+		}
+	  
+		function rgbToCSS(rgbArray) {
+		  return `rgb(${rgbArray[0]}, ${rgbArray[1]}, ${rgbArray[2]})`;
+		}
+	  
+		window.addEventListener('scroll', () => {
+		  const rect = section.getBoundingClientRect();
+		  const windowHeight = window.innerHeight;
+	  
+		  const rawProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
+		  const scrollProgress = Math.min(Math.max(rawProgress, 0), 1);
+	  
+		  // Define fade range
+		  const fadeStart = 0.4;
+		  const fadeEnd = 0.7;
+	  
+		  let fadeProgress = (scrollProgress - fadeStart) / (fadeEnd - fadeStart);
+		  fadeProgress = Math.min(Math.max(fadeProgress, 0), 1); // Clamp between 0 and 1
+	  
+		  const startColor = [215, 233, 253]; // Light blue
+		  const endColor = [0, 32, 82];       // Dark blue
+	  
+		  const newColor = interpolateColor(startColor, endColor, fadeProgress); // <-- this was the missing piece
+		  section.style.backgroundColor = rgbToCSS(newColor);
+		});
+	  </script>
+		
+
 	
+
 	<section id="aboutme">
 		<h1 id="text2">ABOUT ME</h1>
 	</section>
