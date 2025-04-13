@@ -58,7 +58,7 @@ section img {
 
 #text {
   position: relative;
-  z-index: 100000;
+  z-index: 1000;
   color: #ffffff;
   font-size: 10.5em;
   text-align: center;
@@ -69,7 +69,7 @@ section img {
 
 #text2 {
   position: relative;
-  z-index: 100000;
+  z-index: 1000;
   color: #004081;
   font-size: 8.5em;
   text-align: center;
@@ -2122,7 +2122,7 @@ progress {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; 
-  z-index: 2000;
+  z-index: 100000;
 }
   
 
@@ -2210,7 +2210,8 @@ progress {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.5rem;
+ }
   .navbar > .container,
   .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
     display: -webkit-box;
@@ -2234,7 +2235,7 @@ progress {
   white-space: nowrap; }
 
 .navbar-nav {
-  z-index: 2000;
+  z-index: 100000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
