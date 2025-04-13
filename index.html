@@ -60,6 +60,16 @@
 		<h1 id="text">ELLE<br>CHOO</h1>
 	</section>
 
+	<script>
+		window.addEventListener('scroll', function () {
+		  const text = document.getElementById('text');
+		  const scrollY = window.scrollY;
+		  const maxScroll = 500; // adjust this value to control fade speed
+		  const opacity = Math.max(1 - scrollY / maxScroll, 0);
+		  text.style.opacity = opacity;
+		});
+	</script>
+
 	<div id="scroll-down" class="pulsing">v Scroll Down v</div>
 
 	<script>
@@ -272,7 +282,7 @@
 					<div class="col-lg-6 pe-lg-6" data-aos="fade-up">
 						<h2 class="mb-4">Hi, I'm Elle!</h2>
 						<p class="mb-5">
-							I'm a Communication Design student at Parsons School of Design (graduating in 2027). I'm passionate about creating thoughtful digital designs and interfaces as well as all things graphic design. Through my studies in design principles, typography, and interaction design, I'm building a strong foundation while constantly seeking new skills and creative challenges.
+							I'm a Communication Design student at Parsons School of Design, graduating in 2027. I love creating thoughtful digital designs and interfaces, and am interested in graphic and product design. Through my studies in typography and interaction design, I'm building a strong foundation while always pursuing new creative endeavors in my free time.
 						</p>
 					</div>
 					<div class="col-lg-6">

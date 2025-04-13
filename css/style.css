@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 section {
@@ -97,7 +97,7 @@ section img {
   bottom: 25px; /* Set how far from the bottom you want it to be */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center the text perfectly */
-  font-size: 1.3rem; /* Customize the size */
+  font-size: 1.1rem; /* Customize the size */
   color: rgb(255, 255, 255);
   font-weight: normal;
   z-index: 1000; /* Ensure it appears on top of other content */
@@ -409,8 +409,6 @@ body {
   padding: 50px 0; /* Add padding to the footer */
   background-color: transparent;
 }
-
-
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -2127,27 +2125,6 @@ progress {
   padding: 0.25rem 1rem;
   color: #212529; }
 
-.dropdown-menu-dark {
-  color: #dee2e6;
-  background-color: #343a40;
-  border-color: rgba(0, 0, 0, 0.15); }
-  .dropdown-menu-dark .dropdown-item {
-    color: #dee2e6; }
-    .dropdown-menu-dark .dropdown-item:hover, .dropdown-menu-dark .dropdown-item:focus {
-      color: #fff;
-      background-color: rgba(255, 255, 255, 0.15); }
-    .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
-      color: #fff;
-      background-color: #ff4c4c; }
-    .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
-      color: #adb5bd; }
-  .dropdown-menu-dark .dropdown-divider {
-    border-color: rgba(0, 0, 0, 0.15); }
-  .dropdown-menu-dark .dropdown-item-text {
-    color: #dee2e6; }
-  .dropdown-menu-dark .dropdown-header {
-    color: #adb5bd; }
-
 
 
 .nav {
@@ -2209,7 +2186,7 @@ progress {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ff4c4c; }
+  background-color: #4c76ff; }
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
@@ -2814,36 +2791,6 @@ progress {
   padding-left: 0;
   list-style: none; }
 
-.page-link {
-  position: relative;
-  display: block;
-  color: #ff4c4c;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
-  @media (prefers-reduced-motion: reduce) {
-    .page-link {
-      -webkit-transition: none;
-      -o-transition: none;
-      transition: none; } }
-  .page-link:hover {
-    z-index: 2;
-    color: #cc3d3d;
-    background-color: #e9ecef;
-    border-color: #dee2e6; }
-  .page-link:focus {
-    z-index: 3;
-    color: #cc3d3d;
-    background-color: #e9ecef;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 76, 76, 0.25);
-    box-shadow: 0 0 0 0.25rem rgba(255, 76, 76, 0.25); }
-
 .page-item:not(:first-child) .page-link {
   margin-left: -1px; }
 
@@ -3210,10 +3157,10 @@ progress {
     border-color: #664d03; }
 
 .list-group-item-danger {
-  color: #842029;
+  color: #362084;
   background-color: #f8d7da; }
   .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
-    color: #842029;
+    color: #3c2084;
     background-color: #dfc2c4; }
   .list-group-item-danger.list-group-item-action.active {
     color: #fff;
@@ -3230,17 +3177,6 @@ progress {
     color: #fff;
     background-color: #636464;
     border-color: #636464; }
-
-.list-group-item-dark {
-  color: #141619;
-  background-color: #d3d3d4; }
-  .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-    color: #141619;
-    background-color: #bebebf; }
-  .list-group-item-dark.list-group-item-action.active {
-    color: #fff;
-    background-color: #141619;
-    border-color: #141619; }
 
 .btn-close {
   -webkit-box-sizing: content-box;
@@ -3855,46 +3791,6 @@ progress {
   display: block;
   clear: both;
   content: ""; }
-
-.link-primary {
-  color: #ff4c4c; }
-  .link-primary:hover, .link-primary:focus {
-    color: #ff7070; }
-
-.link-secondary {
-  color: #52565e; }
-  .link-secondary:hover, .link-secondary:focus {
-    color: #42454b; }
-
-.link-success {
-  color: #198754; }
-  .link-success:hover, .link-success:focus {
-    color: #146c43; }
-
-.link-info {
-  color: #0dcaf0; }
-  .link-info:hover, .link-info:focus {
-    color: #3dd5f3; }
-
-.link-warning {
-  color: #ffc107; }
-  .link-warning:hover, .link-warning:focus {
-    color: #ffcd39; }
-
-.link-danger {
-  color: #dc3545; }
-  .link-danger:hover, .link-danger:focus {
-    color: #b02a37; }
-
-.link-light {
-  color: #f8f9fa; }
-  .link-light:hover, .link-light:focus {
-    color: #f9fafb; }
-
-.link-dark {
-  color: #212529; }
-  .link-dark:hover, .link-dark:focus {
-    color: #1a1e21; }
 
 .ratio {
   position: relative;
@@ -7207,13 +7103,6 @@ progress {
 .position-relative {
   position: relative; }
 
-.logo {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 700; }
-  .logo:hover {
-    color: #fff; }
-
 .site-nav {
   position: absolute;
   top: 0;
@@ -7239,7 +7128,7 @@ progress {
         text-decoration: none !important;
         color: rgba(255, 255, 255, 0.7); }
         .site-nav .site-navigation .site-menu > li > a:hover {
-          color: #002ca6; }
+          color: #000000; }
       .site-nav .site-navigation .site-menu > li.cta-button a {
         padding: 6px 20px;
         border: 2px solid rgba(255, 255, 255, 0.1);
@@ -7319,7 +7208,7 @@ progress {
             padding: 5px 20px;
             display: block; }
             .site-nav .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              color: #ff4c4c;
+              color: #8b4cff;
               color: #000; }
           .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
@@ -7328,10 +7217,10 @@ progress {
             left: 100%;
             top: 0; }
             .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown li a:hover, .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children > ul li a:hover {
-              color: #ff4c4c;
+              color: #854cff;
               color: #000; }
           .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-nav .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
-            color: #ff4c4c;
+            color: #914cff;
             color: #000; }
       .site-nav .site-navigation .site-menu .has-children:hover > a, .site-nav .site-navigation .site-menu .has-children:focus > a, .site-nav .site-navigation .site-menu .has-children:active > a {
         color: #fff; }
@@ -7441,12 +7330,12 @@ progress {
       position: relative;
       color: #000; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #ff4c4c; }
+        color: #7ebcff; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #ff4c4c; }
+        color: #7ebcff; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -7613,10 +7502,10 @@ body {
   color: #808080; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  color: #000; }
+  color: #033787; }
 
 .text-black {
-  color: #000 !important; }
+  color: #033787 !important; }
 
 a {
   -webkit-transition: .3s all ease;
