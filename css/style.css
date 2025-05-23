@@ -15,15 +15,37 @@
 }
 
 
-.glightbox-description {
-  font-size: 0.95rem;
-  color: #999;
+
+/* Ensure container is in flow */
+.gdesc-inner {
+  position: relative;
+  top: 0rem; /* Move entire block down */
+  text-align: left;
 }
 
-.glightbox-title {
+/* Title styling */
+.gdesc-inner .glightbox-title {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  color: white !important;
 }
+
+/* Description styling */
+.gdesc-inner .glightbox-description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* On small screens, move everything down more */
+@media (max-width: 768px) {
+  .gdesc-inner {
+    top: 3.5rem !important;
+  }
+}
+
+
 
 
 section {
