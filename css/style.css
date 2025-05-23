@@ -16,35 +16,37 @@
 
 
 
-/* Ensure container is in flow */
 .gdesc-inner {
   position: relative;
-  top: 0rem; /* Move entire block down */
+  top: 0rem;
   text-align: left;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
-/* Title styling */
 .gdesc-inner .glightbox-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem !important;
   font-weight: bold;
   color: white !important;
 }
 
-/* Description styling */
 .gdesc-inner .glightbox-description {
   font-size: 1rem;
   color: #ccc;
-  line-height: 1.6;
-  margin-top: 0.5rem;
+  line-height: 1.5;
+  margin-top: 0rem;
 }
 
-/* On small screens, move everything down more */
 @media (max-width: 768px) {
   .gdesc-inner {
-    top: 3.5rem !important;
+    top: 3.8rem !important;
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+    padding: 1rem;
+    border-radius: 0.5rem; /* optional for rounded corners */
   }
 }
-
 
 
 
@@ -114,13 +116,13 @@ section img {
 
 @media (max-width: 900px) {
   #text2 {
-    font-size: 6em; /* Adjust the font size as needed */
+    font-size: 6em;
   }
 }
 
 @media (max-width: 600px) {
   #text2 {
-    font-size: 4em; /* Adjust the font size as needed */
+    font-size: 4em;
   }
 }
 
@@ -128,20 +130,19 @@ section img {
 #scroll-down {
   font-family: 'Manrope', sans-serif;
   position: absolute;
-  bottom: 25px; /* Set how far from the bottom you want it to be */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center the text perfectly */
-  font-size: 1.1rem; /* Customize the size */
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
   color: rgb(255, 255, 255);
   font-weight: normal;
-  z-index: 1000; /* Ensure it appears on top of other content */
-  opacity: 1; /* Initially fully visible */
-  transition: opacity 0.5s ease-out; /* Smooth fade out transition */
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
-/* Fade-out effect */
 #scroll-down.fade-out {
-  opacity: 0; /* Make the element fade away */
+  opacity: 0;
 }
 
 @keyframes pulseColor {
